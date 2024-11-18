@@ -24,7 +24,7 @@ build-backend = "setuptools.build_meta"
 
 # Project settings -----------------------------------------------------------------------------------------------------
 [project]
-name = "ultralytics"
+name = "ultralytics-headless"
 dynamic = ["version"]
 description = "Ultralytics YOLO 🚀 for SOTA object detection, multi-object tracking, instance segmentation, pose estimation and image classification."
 readme = "README.md"
@@ -36,7 +36,7 @@ authors = [
     { name = "Jing Qiu", email = "jing.qiu@ultralytics.com" },
 ]
 maintainers = [
-    { name = "Ultralytics", email = "hello@ultralytics.com" },
+    { name = "Ultralytics", email = "olivier.mirat.om@gmail.com" },
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -64,7 +64,7 @@ dependencies = [
     "numpy>=1.23.0",
     "numpy<2.0.0; sys_platform == 'darwin'", # macOS OpenVINO errors https://github.com/ultralytics/ultralytics/pull/17221
     "matplotlib>=3.3.0",
-    "opencv-python>=4.6.0",
+    "opencv-python-headless",
     "pillow>=7.1.2",
     "pyyaml>=5.3.1",
     "requests>=2.23.0",
